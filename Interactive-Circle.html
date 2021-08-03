@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+    <title>Interactive-Circles</title>
+    <style type="text/css">
+        .circle {
+
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            float: left;
+            margin: 50px;
+
+        }
+
+        #peacockblue-circle {
+            background-color: rgb(51, 99, 108);
+        }
+
+        #yellow-circle {
+            background-color: rgb(226, 169, 60);
+        }
+
+        #candyapple-circle {
+            background-color: rgb(225, 65, 36);
+        }
+
+        h1 {
+            width: 800px;
+            margin: 50px;
+            padding-right: 40px;
+            padding-left: 40px;
+            font-family: Helvetica;
+            text-align: left;
+    </style>
+</head>
+
+<body>
+
+    <h1>Click on the circles and watch them disappear :)</h1>
+
+    <div class="circle" id="peacockblue-circle"></div>
+    <div class="circle" id="yellow-circle"></div>
+    <div class="circle" id="candyapple-circle"></div>
+
+    <script type="text/javascript">
+        document.getElementById("peacockblue-circle").onclick = function () {
+            document.getElementById("peacockblue-circle").style.display = "none"
+
+        }
+
+        document.getElementById("yellow-circle").onclick = function () {
+            document.getElementById("yellow-circle").style.display = "none"
+
+        }
+        document.getElementById("candyapple-circle").onclick = function () {
+            document.getElementById("candyapple-circle").style.display = "none"
+
+        }
+
+    </script>
+</body>
+
+</html>
